@@ -1,0 +1,9 @@
+../Core/Src/main.c:72:13:print_frame_over_uart_half	3
+../Core/Src/main.c:90:13:print_frame_over_uart_full	3
+../Core/Src/main.c:112:5:main	1
+../Core/Src/main.c:193:6:SystemClock_Config	3
+../Core/Src/main.c:231:6:HAL_ADC_ConvHalfCpltCallback	2
+../Core/Src/main.c:242:6:HAL_ADC_ConvCpltCallback	2
+../Core/Src/main.c:253:6:displayHEX	1
+../Core/Src/main.c:266:6:MPU_Config	1
+../Core/Src/main.c:297:6:Error_Handler	1

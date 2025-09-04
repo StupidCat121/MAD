@@ -107,7 +107,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET)
+	  if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_SET)
 	  {
 
 		  if(i == 0){
@@ -132,7 +132,7 @@ int main(void)
 		  HAL_Delay(300);
 
 
-	  }else if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_SET){
+	  }else if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET){
 		  si = i;
 		  toggle = 1;
 		  if(toggle == 1){

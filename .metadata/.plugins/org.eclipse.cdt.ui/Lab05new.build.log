@@ -1,0 +1,42 @@
+14:18:44 **** Incremental Build of configuration Debug for project Lab05new ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvHalfCpltCallback':
+../Core/Src/main.c:166:27: error: 'LD2_GPIO_Port' undeclared (first use in this function)
+  166 |         HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET); // LD2 ติด
+      |                           ^~~~~~~~~~~~~
+../Core/Src/main.c:166:27: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:166:42: error: 'LD2_Pin' undeclared (first use in this function)
+  166 |         HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET); // LD2 ติด
+      |                                          ^~~~~~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:175:27: error: 'LD2_GPIO_Port' undeclared (first use in this function)
+  175 |         HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET); // LD2 ดับ
+      |                           ^~~~~~~~~~~~~
+../Core/Src/main.c:175:42: error: 'LD2_Pin' undeclared (first use in this function)
+  175 |         HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET); // LD2 ดับ
+      |                                          ^~~~~~~
+../Core/Src/main.c: In function 'print_block':
+../Core/Src/main.c:183:12: warning: implicit declaration of function 'snprintf' [-Wimplicit-function-declaration]
+  183 |     len += snprintf(msg+len, sizeof(msg)-len, "%s:", tag);
+      |            ^~~~~~~~
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+   23 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   24 | 
+../Core/Src/main.c:183:12: warning: incompatible implicit declaration of built-in function 'snprintf' [-Wbuiltin-declaration-mismatch]
+  183 |     len += snprintf(msg+len, sizeof(msg)-len, "%s:", tag);
+      |            ^~~~~~~~
+../Core/Src/main.c:183:12: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:192:13: warning: 'average_half' defined but not used [-Wunused-function]
+  192 | static void average_half(const uint16_t *src, uint16_t *avg)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:179:13: warning: 'print_block' defined but not used [-Wunused-function]
+  179 | static void print_block(const char *tag, const uint16_t *p)
+      |             ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+14:18:45 Build Failed. 5 errors, 4 warnings. (took 404ms)
+

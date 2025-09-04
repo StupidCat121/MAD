@@ -1,0 +1,9 @@
+../Core/Src/main.c:72:13:print_frame_over_uart_half	104	static
+../Core/Src/main.c:90:13:print_frame_over_uart_full	120	static
+../Core/Src/main.c:112:5:main	8	static
+../Core/Src/main.c:193:6:SystemClock_Config	88	static
+../Core/Src/main.c:231:6:HAL_ADC_ConvHalfCpltCallback	16	static
+../Core/Src/main.c:242:6:HAL_ADC_ConvCpltCallback	16	static
+../Core/Src/main.c:253:6:displayHEX	40	static
+../Core/Src/main.c:266:6:MPU_Config	24	static
+../Core/Src/main.c:297:6:Error_Handler	4	static,ignoring_inline_asm

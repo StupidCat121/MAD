@@ -610,200 +610,200 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET)
- 80006d8:	2101      	movs	r1, #1
- 80006da:	48b9      	ldr	r0, [pc, #740]	@ (80009c0 <main+0x2fc>)
- 80006dc:	f000 fe2a 	bl	8001334 <HAL_GPIO_ReadPin>
- 80006e0:	4603      	mov	r3, r0
- 80006e2:	2b00      	cmp	r3, #0
- 80006e4:	f040 80c9 	bne.w	800087a <main+0x1b6>
+	  if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_SET)
+ 80006d8:	f44f 5100 	mov.w	r1, #8192	@ 0x2000
+ 80006dc:	48b8      	ldr	r0, [pc, #736]	@ (80009c0 <main+0x2fc>)
+ 80006de:	f000 fe29 	bl	8001334 <HAL_GPIO_ReadPin>
+ 80006e2:	4603      	mov	r3, r0
+ 80006e4:	2b01      	cmp	r3, #1
+ 80006e6:	f040 80c9 	bne.w	800087c <main+0x1b8>
 	  {
 
 		  if(i == 0){
- 80006e8:	4bb6      	ldr	r3, [pc, #728]	@ (80009c4 <main+0x300>)
- 80006ea:	f993 3000 	ldrsb.w	r3, [r3]
- 80006ee:	2b00      	cmp	r3, #0
- 80006f0:	d139      	bne.n	8000766 <main+0xa2>
+ 80006ea:	4bb6      	ldr	r3, [pc, #728]	@ (80009c4 <main+0x300>)
+ 80006ec:	f993 3000 	ldrsb.w	r3, [r3]
+ 80006f0:	2b00      	cmp	r3, #0
+ 80006f2:	d139      	bne.n	8000768 <main+0xa4>
 			  HAL_GPIO_WritePin(IOPIN[i], LED_Pin[i], GPIO_PIN_SET);
- 80006f2:	4bb4      	ldr	r3, [pc, #720]	@ (80009c4 <main+0x300>)
- 80006f4:	f993 3000 	ldrsb.w	r3, [r3]
- 80006f8:	461a      	mov	r2, r3
- 80006fa:	4bb3      	ldr	r3, [pc, #716]	@ (80009c8 <main+0x304>)
- 80006fc:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
- 8000700:	4ab0      	ldr	r2, [pc, #704]	@ (80009c4 <main+0x300>)
- 8000702:	f992 2000 	ldrsb.w	r2, [r2]
- 8000706:	4611      	mov	r1, r2
- 8000708:	4ab0      	ldr	r2, [pc, #704]	@ (80009cc <main+0x308>)
- 800070a:	f832 1011 	ldrh.w	r1, [r2, r1, lsl #1]
- 800070e:	2201      	movs	r2, #1
- 8000710:	4618      	mov	r0, r3
- 8000712:	f000 fe27 	bl	8001364 <HAL_GPIO_WritePin>
+ 80006f4:	4bb3      	ldr	r3, [pc, #716]	@ (80009c4 <main+0x300>)
+ 80006f6:	f993 3000 	ldrsb.w	r3, [r3]
+ 80006fa:	461a      	mov	r2, r3
+ 80006fc:	4bb2      	ldr	r3, [pc, #712]	@ (80009c8 <main+0x304>)
+ 80006fe:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+ 8000702:	4ab0      	ldr	r2, [pc, #704]	@ (80009c4 <main+0x300>)
+ 8000704:	f992 2000 	ldrsb.w	r2, [r2]
+ 8000708:	4611      	mov	r1, r2
+ 800070a:	4ab0      	ldr	r2, [pc, #704]	@ (80009cc <main+0x308>)
+ 800070c:	f832 1011 	ldrh.w	r1, [r2, r1, lsl #1]
+ 8000710:	2201      	movs	r2, #1
+ 8000712:	4618      	mov	r0, r3
+ 8000714:	f000 fe26 	bl	8001364 <HAL_GPIO_WritePin>
 			  HAL_GPIO_WritePin(IOPIN[7], LED_Pin[7], GPIO_PIN_RESET);
- 8000716:	4bac      	ldr	r3, [pc, #688]	@ (80009c8 <main+0x304>)
- 8000718:	69db      	ldr	r3, [r3, #28]
- 800071a:	4aac      	ldr	r2, [pc, #688]	@ (80009cc <main+0x308>)
- 800071c:	89d1      	ldrh	r1, [r2, #14]
- 800071e:	2200      	movs	r2, #0
- 8000720:	4618      	mov	r0, r3
- 8000722:	f000 fe1f 	bl	8001364 <HAL_GPIO_WritePin>
+ 8000718:	4bab      	ldr	r3, [pc, #684]	@ (80009c8 <main+0x304>)
+ 800071a:	69db      	ldr	r3, [r3, #28]
+ 800071c:	4aab      	ldr	r2, [pc, #684]	@ (80009cc <main+0x308>)
+ 800071e:	89d1      	ldrh	r1, [r2, #14]
+ 8000720:	2200      	movs	r2, #0
+ 8000722:	4618      	mov	r0, r3
+ 8000724:	f000 fe1e 	bl	8001364 <HAL_GPIO_WritePin>
 			  test = HAL_GPIO_ReadPin(IOPIN[i], LED_Pin[i]);
- 8000726:	4ba7      	ldr	r3, [pc, #668]	@ (80009c4 <main+0x300>)
- 8000728:	f993 3000 	ldrsb.w	r3, [r3]
- 800072c:	461a      	mov	r2, r3
- 800072e:	4ba6      	ldr	r3, [pc, #664]	@ (80009c8 <main+0x304>)
- 8000730:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
- 8000734:	4aa3      	ldr	r2, [pc, #652]	@ (80009c4 <main+0x300>)
- 8000736:	f992 2000 	ldrsb.w	r2, [r2]
- 800073a:	4611      	mov	r1, r2
- 800073c:	4aa3      	ldr	r2, [pc, #652]	@ (80009cc <main+0x308>)
- 800073e:	f832 2011 	ldrh.w	r2, [r2, r1, lsl #1]
- 8000742:	4611      	mov	r1, r2
- 8000744:	4618      	mov	r0, r3
- 8000746:	f000 fdf5 	bl	8001334 <HAL_GPIO_ReadPin>
- 800074a:	4603      	mov	r3, r0
- 800074c:	461a      	mov	r2, r3
- 800074e:	4ba0      	ldr	r3, [pc, #640]	@ (80009d0 <main+0x30c>)
- 8000750:	701a      	strb	r2, [r3, #0]
+ 8000728:	4ba6      	ldr	r3, [pc, #664]	@ (80009c4 <main+0x300>)
+ 800072a:	f993 3000 	ldrsb.w	r3, [r3]
+ 800072e:	461a      	mov	r2, r3
+ 8000730:	4ba5      	ldr	r3, [pc, #660]	@ (80009c8 <main+0x304>)
+ 8000732:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+ 8000736:	4aa3      	ldr	r2, [pc, #652]	@ (80009c4 <main+0x300>)
+ 8000738:	f992 2000 	ldrsb.w	r2, [r2]
+ 800073c:	4611      	mov	r1, r2
+ 800073e:	4aa3      	ldr	r2, [pc, #652]	@ (80009cc <main+0x308>)
+ 8000740:	f832 2011 	ldrh.w	r2, [r2, r1, lsl #1]
+ 8000744:	4611      	mov	r1, r2
+ 8000746:	4618      	mov	r0, r3
+ 8000748:	f000 fdf4 	bl	8001334 <HAL_GPIO_ReadPin>
+ 800074c:	4603      	mov	r3, r0
+ 800074e:	461a      	mov	r2, r3
+ 8000750:	4b9f      	ldr	r3, [pc, #636]	@ (80009d0 <main+0x30c>)
+ 8000752:	701a      	strb	r2, [r3, #0]
 			  i++;
- 8000752:	4b9c      	ldr	r3, [pc, #624]	@ (80009c4 <main+0x300>)
- 8000754:	f993 3000 	ldrsb.w	r3, [r3]
- 8000758:	b2db      	uxtb	r3, r3
- 800075a:	3301      	adds	r3, #1
- 800075c:	b2db      	uxtb	r3, r3
- 800075e:	b25a      	sxtb	r2, r3
- 8000760:	4b98      	ldr	r3, [pc, #608]	@ (80009c4 <main+0x300>)
- 8000762:	701a      	strb	r2, [r3, #0]
- 8000764:	e084      	b.n	8000870 <main+0x1ac>
+ 8000754:	4b9b      	ldr	r3, [pc, #620]	@ (80009c4 <main+0x300>)
+ 8000756:	f993 3000 	ldrsb.w	r3, [r3]
+ 800075a:	b2db      	uxtb	r3, r3
+ 800075c:	3301      	adds	r3, #1
+ 800075e:	b2db      	uxtb	r3, r3
+ 8000760:	b25a      	sxtb	r2, r3
+ 8000762:	4b98      	ldr	r3, [pc, #608]	@ (80009c4 <main+0x300>)
+ 8000764:	701a      	strb	r2, [r3, #0]
+ 8000766:	e084      	b.n	8000872 <main+0x1ae>
 
 		  }else if(i <= 7){
- 8000766:	4b97      	ldr	r3, [pc, #604]	@ (80009c4 <main+0x300>)
- 8000768:	f993 3000 	ldrsb.w	r3, [r3]
- 800076c:	2b07      	cmp	r3, #7
- 800076e:	dc43      	bgt.n	80007f8 <main+0x134>
+ 8000768:	4b96      	ldr	r3, [pc, #600]	@ (80009c4 <main+0x300>)
+ 800076a:	f993 3000 	ldrsb.w	r3, [r3]
+ 800076e:	2b07      	cmp	r3, #7
+ 8000770:	dc43      	bgt.n	80007fa <main+0x136>
 			  HAL_GPIO_WritePin(IOPIN[i], LED_Pin[i], GPIO_PIN_SET);
- 8000770:	4b94      	ldr	r3, [pc, #592]	@ (80009c4 <main+0x300>)
- 8000772:	f993 3000 	ldrsb.w	r3, [r3]
- 8000776:	461a      	mov	r2, r3
- 8000778:	4b93      	ldr	r3, [pc, #588]	@ (80009c8 <main+0x304>)
- 800077a:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
- 800077e:	4a91      	ldr	r2, [pc, #580]	@ (80009c4 <main+0x300>)
- 8000780:	f992 2000 	ldrsb.w	r2, [r2]
- 8000784:	4611      	mov	r1, r2
- 8000786:	4a91      	ldr	r2, [pc, #580]	@ (80009cc <main+0x308>)
- 8000788:	f832 1011 	ldrh.w	r1, [r2, r1, lsl #1]
- 800078c:	2201      	movs	r2, #1
- 800078e:	4618      	mov	r0, r3
- 8000790:	f000 fde8 	bl	8001364 <HAL_GPIO_WritePin>
+ 8000772:	4b94      	ldr	r3, [pc, #592]	@ (80009c4 <main+0x300>)
+ 8000774:	f993 3000 	ldrsb.w	r3, [r3]
+ 8000778:	461a      	mov	r2, r3
+ 800077a:	4b93      	ldr	r3, [pc, #588]	@ (80009c8 <main+0x304>)
+ 800077c:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+ 8000780:	4a90      	ldr	r2, [pc, #576]	@ (80009c4 <main+0x300>)
+ 8000782:	f992 2000 	ldrsb.w	r2, [r2]
+ 8000786:	4611      	mov	r1, r2
+ 8000788:	4a90      	ldr	r2, [pc, #576]	@ (80009cc <main+0x308>)
+ 800078a:	f832 1011 	ldrh.w	r1, [r2, r1, lsl #1]
+ 800078e:	2201      	movs	r2, #1
+ 8000790:	4618      	mov	r0, r3
+ 8000792:	f000 fde7 	bl	8001364 <HAL_GPIO_WritePin>
 			  HAL_GPIO_WritePin(IOPIN[i - 1], LED_Pin[i - 1], GPIO_PIN_RESET);
- 8000794:	4b8b      	ldr	r3, [pc, #556]	@ (80009c4 <main+0x300>)
- 8000796:	f993 3000 	ldrsb.w	r3, [r3]
- 800079a:	3b01      	subs	r3, #1
- 800079c:	4a8a      	ldr	r2, [pc, #552]	@ (80009c8 <main+0x304>)
- 800079e:	f852 0023 	ldr.w	r0, [r2, r3, lsl #2]
- 80007a2:	4b88      	ldr	r3, [pc, #544]	@ (80009c4 <main+0x300>)
- 80007a4:	f993 3000 	ldrsb.w	r3, [r3]
- 80007a8:	3b01      	subs	r3, #1
- 80007aa:	4a88      	ldr	r2, [pc, #544]	@ (80009cc <main+0x308>)
- 80007ac:	f832 3013 	ldrh.w	r3, [r2, r3, lsl #1]
- 80007b0:	2200      	movs	r2, #0
- 80007b2:	4619      	mov	r1, r3
- 80007b4:	f000 fdd6 	bl	8001364 <HAL_GPIO_WritePin>
+ 8000796:	4b8b      	ldr	r3, [pc, #556]	@ (80009c4 <main+0x300>)
+ 8000798:	f993 3000 	ldrsb.w	r3, [r3]
+ 800079c:	3b01      	subs	r3, #1
+ 800079e:	4a8a      	ldr	r2, [pc, #552]	@ (80009c8 <main+0x304>)
+ 80007a0:	f852 0023 	ldr.w	r0, [r2, r3, lsl #2]
+ 80007a4:	4b87      	ldr	r3, [pc, #540]	@ (80009c4 <main+0x300>)
+ 80007a6:	f993 3000 	ldrsb.w	r3, [r3]
+ 80007aa:	3b01      	subs	r3, #1
+ 80007ac:	4a87      	ldr	r2, [pc, #540]	@ (80009cc <main+0x308>)
+ 80007ae:	f832 3013 	ldrh.w	r3, [r2, r3, lsl #1]
+ 80007b2:	2200      	movs	r2, #0
+ 80007b4:	4619      	mov	r1, r3
+ 80007b6:	f000 fdd5 	bl	8001364 <HAL_GPIO_WritePin>
 			  test = HAL_GPIO_ReadPin(IOPIN[i], LED_Pin[i]);
- 80007b8:	4b82      	ldr	r3, [pc, #520]	@ (80009c4 <main+0x300>)
- 80007ba:	f993 3000 	ldrsb.w	r3, [r3]
- 80007be:	461a      	mov	r2, r3
- 80007c0:	4b81      	ldr	r3, [pc, #516]	@ (80009c8 <main+0x304>)
- 80007c2:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
- 80007c6:	4a7f      	ldr	r2, [pc, #508]	@ (80009c4 <main+0x300>)
- 80007c8:	f992 2000 	ldrsb.w	r2, [r2]
- 80007cc:	4611      	mov	r1, r2
- 80007ce:	4a7f      	ldr	r2, [pc, #508]	@ (80009cc <main+0x308>)
- 80007d0:	f832 2011 	ldrh.w	r2, [r2, r1, lsl #1]
- 80007d4:	4611      	mov	r1, r2
- 80007d6:	4618      	mov	r0, r3
- 80007d8:	f000 fdac 	bl	8001334 <HAL_GPIO_ReadPin>
- 80007dc:	4603      	mov	r3, r0
- 80007de:	461a      	mov	r2, r3
- 80007e0:	4b7b      	ldr	r3, [pc, #492]	@ (80009d0 <main+0x30c>)
- 80007e2:	701a      	strb	r2, [r3, #0]
+ 80007ba:	4b82      	ldr	r3, [pc, #520]	@ (80009c4 <main+0x300>)
+ 80007bc:	f993 3000 	ldrsb.w	r3, [r3]
+ 80007c0:	461a      	mov	r2, r3
+ 80007c2:	4b81      	ldr	r3, [pc, #516]	@ (80009c8 <main+0x304>)
+ 80007c4:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+ 80007c8:	4a7e      	ldr	r2, [pc, #504]	@ (80009c4 <main+0x300>)
+ 80007ca:	f992 2000 	ldrsb.w	r2, [r2]
+ 80007ce:	4611      	mov	r1, r2
+ 80007d0:	4a7e      	ldr	r2, [pc, #504]	@ (80009cc <main+0x308>)
+ 80007d2:	f832 2011 	ldrh.w	r2, [r2, r1, lsl #1]
+ 80007d6:	4611      	mov	r1, r2
+ 80007d8:	4618      	mov	r0, r3
+ 80007da:	f000 fdab 	bl	8001334 <HAL_GPIO_ReadPin>
+ 80007de:	4603      	mov	r3, r0
+ 80007e0:	461a      	mov	r2, r3
+ 80007e2:	4b7b      	ldr	r3, [pc, #492]	@ (80009d0 <main+0x30c>)
+ 80007e4:	701a      	strb	r2, [r3, #0]
 			  i++;
- 80007e4:	4b77      	ldr	r3, [pc, #476]	@ (80009c4 <main+0x300>)
- 80007e6:	f993 3000 	ldrsb.w	r3, [r3]
- 80007ea:	b2db      	uxtb	r3, r3
- 80007ec:	3301      	adds	r3, #1
- 80007ee:	b2db      	uxtb	r3, r3
- 80007f0:	b25a      	sxtb	r2, r3
- 80007f2:	4b74      	ldr	r3, [pc, #464]	@ (80009c4 <main+0x300>)
- 80007f4:	701a      	strb	r2, [r3, #0]
- 80007f6:	e03b      	b.n	8000870 <main+0x1ac>
+ 80007e6:	4b77      	ldr	r3, [pc, #476]	@ (80009c4 <main+0x300>)
+ 80007e8:	f993 3000 	ldrsb.w	r3, [r3]
+ 80007ec:	b2db      	uxtb	r3, r3
+ 80007ee:	3301      	adds	r3, #1
+ 80007f0:	b2db      	uxtb	r3, r3
+ 80007f2:	b25a      	sxtb	r2, r3
+ 80007f4:	4b73      	ldr	r3, [pc, #460]	@ (80009c4 <main+0x300>)
+ 80007f6:	701a      	strb	r2, [r3, #0]
+ 80007f8:	e03b      	b.n	8000872 <main+0x1ae>
 		  }else{
 			  i = 0;
- 80007f8:	4b72      	ldr	r3, [pc, #456]	@ (80009c4 <main+0x300>)
- 80007fa:	2200      	movs	r2, #0
- 80007fc:	701a      	strb	r2, [r3, #0]
+ 80007fa:	4b72      	ldr	r3, [pc, #456]	@ (80009c4 <main+0x300>)
+ 80007fc:	2200      	movs	r2, #0
+ 80007fe:	701a      	strb	r2, [r3, #0]
 			  HAL_GPIO_WritePin(IOPIN[i], LED_Pin[i], GPIO_PIN_SET);
- 80007fe:	4b71      	ldr	r3, [pc, #452]	@ (80009c4 <main+0x300>)
- 8000800:	f993 3000 	ldrsb.w	r3, [r3]
- 8000804:	461a      	mov	r2, r3
- 8000806:	4b70      	ldr	r3, [pc, #448]	@ (80009c8 <main+0x304>)
- 8000808:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
- 800080c:	4a6d      	ldr	r2, [pc, #436]	@ (80009c4 <main+0x300>)
- 800080e:	f992 2000 	ldrsb.w	r2, [r2]
- 8000812:	4611      	mov	r1, r2
- 8000814:	4a6d      	ldr	r2, [pc, #436]	@ (80009cc <main+0x308>)
- 8000816:	f832 1011 	ldrh.w	r1, [r2, r1, lsl #1]
- 800081a:	2201      	movs	r2, #1
- 800081c:	4618      	mov	r0, r3
- 800081e:	f000 fda1 	bl	8001364 <HAL_GPIO_WritePin>
+ 8000800:	4b70      	ldr	r3, [pc, #448]	@ (80009c4 <main+0x300>)
+ 8000802:	f993 3000 	ldrsb.w	r3, [r3]
+ 8000806:	461a      	mov	r2, r3
+ 8000808:	4b6f      	ldr	r3, [pc, #444]	@ (80009c8 <main+0x304>)
+ 800080a:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+ 800080e:	4a6d      	ldr	r2, [pc, #436]	@ (80009c4 <main+0x300>)
+ 8000810:	f992 2000 	ldrsb.w	r2, [r2]
+ 8000814:	4611      	mov	r1, r2
+ 8000816:	4a6d      	ldr	r2, [pc, #436]	@ (80009cc <main+0x308>)
+ 8000818:	f832 1011 	ldrh.w	r1, [r2, r1, lsl #1]
+ 800081c:	2201      	movs	r2, #1
+ 800081e:	4618      	mov	r0, r3
+ 8000820:	f000 fda0 	bl	8001364 <HAL_GPIO_WritePin>
 			  HAL_GPIO_WritePin(IOPIN[7], LED_Pin[7], GPIO_PIN_RESET);
- 8000822:	4b69      	ldr	r3, [pc, #420]	@ (80009c8 <main+0x304>)
- 8000824:	69db      	ldr	r3, [r3, #28]
- 8000826:	4a69      	ldr	r2, [pc, #420]	@ (80009cc <main+0x308>)
- 8000828:	89d1      	ldrh	r1, [r2, #14]
- 800082a:	2200      	movs	r2, #0
- 800082c:	4618      	mov	r0, r3
- 800082e:	f000 fd99 	bl	8001364 <HAL_GPIO_WritePin>
+ 8000824:	4b68      	ldr	r3, [pc, #416]	@ (80009c8 <main+0x304>)
+ 8000826:	69db      	ldr	r3, [r3, #28]
+ 8000828:	4a68      	ldr	r2, [pc, #416]	@ (80009cc <main+0x308>)
+ 800082a:	89d1      	ldrh	r1, [r2, #14]
+ 800082c:	2200      	movs	r2, #0
+ 800082e:	4618      	mov	r0, r3
+ 8000830:	f000 fd98 	bl	8001364 <HAL_GPIO_WritePin>
 			  test = HAL_GPIO_ReadPin(IOPIN[i], LED_Pin[i]);
- 8000832:	4b64      	ldr	r3, [pc, #400]	@ (80009c4 <main+0x300>)
- 8000834:	f993 3000 	ldrsb.w	r3, [r3]
- 8000838:	461a      	mov	r2, r3
- 800083a:	4b63      	ldr	r3, [pc, #396]	@ (80009c8 <main+0x304>)
- 800083c:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
- 8000840:	4a60      	ldr	r2, [pc, #384]	@ (80009c4 <main+0x300>)
- 8000842:	f992 2000 	ldrsb.w	r2, [r2]
- 8000846:	4611      	mov	r1, r2
- 8000848:	4a60      	ldr	r2, [pc, #384]	@ (80009cc <main+0x308>)
- 800084a:	f832 2011 	ldrh.w	r2, [r2, r1, lsl #1]
- 800084e:	4611      	mov	r1, r2
- 8000850:	4618      	mov	r0, r3
- 8000852:	f000 fd6f 	bl	8001334 <HAL_GPIO_ReadPin>
- 8000856:	4603      	mov	r3, r0
- 8000858:	461a      	mov	r2, r3
- 800085a:	4b5d      	ldr	r3, [pc, #372]	@ (80009d0 <main+0x30c>)
- 800085c:	701a      	strb	r2, [r3, #0]
+ 8000834:	4b63      	ldr	r3, [pc, #396]	@ (80009c4 <main+0x300>)
+ 8000836:	f993 3000 	ldrsb.w	r3, [r3]
+ 800083a:	461a      	mov	r2, r3
+ 800083c:	4b62      	ldr	r3, [pc, #392]	@ (80009c8 <main+0x304>)
+ 800083e:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+ 8000842:	4a60      	ldr	r2, [pc, #384]	@ (80009c4 <main+0x300>)
+ 8000844:	f992 2000 	ldrsb.w	r2, [r2]
+ 8000848:	4611      	mov	r1, r2
+ 800084a:	4a60      	ldr	r2, [pc, #384]	@ (80009cc <main+0x308>)
+ 800084c:	f832 2011 	ldrh.w	r2, [r2, r1, lsl #1]
+ 8000850:	4611      	mov	r1, r2
+ 8000852:	4618      	mov	r0, r3
+ 8000854:	f000 fd6e 	bl	8001334 <HAL_GPIO_ReadPin>
+ 8000858:	4603      	mov	r3, r0
+ 800085a:	461a      	mov	r2, r3
+ 800085c:	4b5c      	ldr	r3, [pc, #368]	@ (80009d0 <main+0x30c>)
+ 800085e:	701a      	strb	r2, [r3, #0]
 			  i++;
- 800085e:	4b59      	ldr	r3, [pc, #356]	@ (80009c4 <main+0x300>)
- 8000860:	f993 3000 	ldrsb.w	r3, [r3]
- 8000864:	b2db      	uxtb	r3, r3
- 8000866:	3301      	adds	r3, #1
- 8000868:	b2db      	uxtb	r3, r3
- 800086a:	b25a      	sxtb	r2, r3
- 800086c:	4b55      	ldr	r3, [pc, #340]	@ (80009c4 <main+0x300>)
- 800086e:	701a      	strb	r2, [r3, #0]
+ 8000860:	4b58      	ldr	r3, [pc, #352]	@ (80009c4 <main+0x300>)
+ 8000862:	f993 3000 	ldrsb.w	r3, [r3]
+ 8000866:	b2db      	uxtb	r3, r3
+ 8000868:	3301      	adds	r3, #1
+ 800086a:	b2db      	uxtb	r3, r3
+ 800086c:	b25a      	sxtb	r2, r3
+ 800086e:	4b55      	ldr	r3, [pc, #340]	@ (80009c4 <main+0x300>)
+ 8000870:	701a      	strb	r2, [r3, #0]
 		  }
 
 		  HAL_Delay(300);
- 8000870:	f44f 7096 	mov.w	r0, #300	@ 0x12c
- 8000874:	f000 fa30 	bl	8000cd8 <HAL_Delay>
- 8000878:	e72e      	b.n	80006d8 <main+0x14>
+ 8000872:	f44f 7096 	mov.w	r0, #300	@ 0x12c
+ 8000876:	f000 fa2f 	bl	8000cd8 <HAL_Delay>
+ 800087a:	e72d      	b.n	80006d8 <main+0x14>
 
 
-	  }else if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_SET){
- 800087a:	f44f 5100 	mov.w	r1, #8192	@ 0x2000
+	  }else if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET){
+ 800087c:	2101      	movs	r1, #1
  800087e:	4855      	ldr	r0, [pc, #340]	@ (80009d4 <main+0x310>)
  8000880:	f000 fd58 	bl	8001334 <HAL_GPIO_ReadPin>
  8000884:	4603      	mov	r3, r0
- 8000886:	2b01      	cmp	r3, #1
+ 8000886:	2b00      	cmp	r3, #0
  8000888:	f47f af26 	bne.w	80006d8 <main+0x14>
 		  si = i;
  800088c:	4b4d      	ldr	r3, [pc, #308]	@ (80009c4 <main+0x300>)
@@ -955,14 +955,14 @@ int main(void)
  80009b8:	4b08      	ldr	r3, [pc, #32]	@ (80009dc <main+0x318>)
  80009ba:	2200      	movs	r2, #0
  80009bc:	701a      	strb	r2, [r3, #0]
-	  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET)
+	  if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_SET)
  80009be:	e68b      	b.n	80006d8 <main+0x14>
- 80009c0:	40020000 	.word	0x40020000
+ 80009c0:	40020800 	.word	0x40020800
  80009c4:	2000005a 	.word	0x2000005a
  80009c8:	20000000 	.word	0x20000000
  80009cc:	20000020 	.word	0x20000020
  80009d0:	20000058 	.word	0x20000058
- 80009d4:	40020800 	.word	0x40020800
+ 80009d4:	40020000 	.word	0x40020000
  80009d8:	2000005b 	.word	0x2000005b
  80009dc:	2000005c 	.word	0x2000005c
  80009e0:	20000059 	.word	0x20000059

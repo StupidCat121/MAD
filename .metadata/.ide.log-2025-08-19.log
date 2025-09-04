@@ -1,0 +1,47 @@
+2025-08-21 00:09:54,661 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 346554864 Bytes (1073741824)
+2025-08-21 00:09:56,100 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 379587056 Bytes (1073741824)
+2025-08-21 00:10:00,413 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 459801072 Bytes (1073741824)
+2025-08-21 00:10:01,274 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-08-21 00:10:01,275 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: ADC
+2025-08-21 00:10:01,275 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-08-21 00:10:01,275 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-08-21 00:10:01,275 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2025-08-21 00:10:01,277 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: CORTEX_M7
+2025-08-21 00:10:01,278 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-08-21 00:10:01,280 [INFO] CodeGenerator:892 - code generatio: config db path: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2025-08-21 00:10:01,557 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\MXTmpFiles\license.tmp_save
+2025-08-21 00:10:01,885 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\MXTmpFiles\license.tmp
+2025-08-21 00:10:01,983 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Src\gpio.c_save
+2025-08-21 00:10:02,167 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Src\gpio.c
+2025-08-21 00:10:02,192 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Inc\gpio.h_save
+2025-08-21 00:10:02,332 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Inc\gpio.h
+2025-08-21 00:10:02,771 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Src\adc.c_save
+2025-08-21 00:10:03,217 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Src\adc.c
+2025-08-21 00:10:03,243 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Inc\adc.h_save
+2025-08-21 00:10:03,414 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Inc\adc.h
+2025-08-21 00:10:03,449 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\MXTmpFiles\cortex.tmp_save
+2025-08-21 00:10:03,601 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\MXTmpFiles\cortex.tmp
+2025-08-21 00:10:03,640 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Src\usart.c_save
+2025-08-21 00:10:03,856 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Src\usart.c
+2025-08-21 00:10:03,875 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Inc\usart.h_save
+2025-08-21 00:10:04,004 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Inc\usart.h
+2025-08-21 00:10:04,046 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Src\stm32f7xx_it.c_save
+2025-08-21 00:10:04,756 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Src\stm32f7xx_it.c
+2025-08-21 00:10:04,774 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Inc\stm32f7xx_it.h_save
+2025-08-21 00:10:04,892 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Inc\stm32f7xx_it.h
+2025-08-21 00:10:04,944 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Src\stm32f7xx_hal_msp.c_save
+2025-08-21 00:10:05,106 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Src\stm32f7xx_hal_msp.c
+2025-08-21 00:10:05,119 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\MXTmpFiles\system.tmp_save
+2025-08-21 00:10:05,212 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\MXTmpFiles\system.tmp
+2025-08-21 00:10:05,236 [INFO] CodeEngine:321 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Inc\stm32f7xx_hal_conf.h_save
+2025-08-21 00:10:05,329 [INFO] CodeEngine:345 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Inc\stm32f7xx_hal_conf.h
+2025-08-21 00:10:05,380 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Inc\main.h_save
+2025-08-21 00:10:05,528 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Inc\main.h
+2025-08-21 00:10:05,540 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Src\main.c_save
+2025-08-21 00:10:05,683 [INFO] CodeEngine:289 - Generated code: C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab05new\Core\Src\main.c
+2025-08-21 00:10:06,311 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 329mS.
+2025-08-21 00:10:06,320 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2025-08-21 00:10:06,436 [INFO] ConfigFileManager:1595 - The Die is : DIE451
+2025-08-21 00:10:07,897 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 1577mS.
+2025-08-21 00:10:07,899 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2025-08-21 00:10:07,905 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
