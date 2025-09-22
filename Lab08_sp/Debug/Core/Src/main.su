@@ -1,0 +1,8 @@
+../Core/Src/main.c:103:10:CRC16_2	24	static
+../Core/Src/main.c:120:9:IsCircleTouched	24	static
+../Core/Src/main.c:126:6:mixColor	16	static
+../Core/Src/main.c:140:6:initializeScreen0	16	static
+../Core/Src/main.c:174:5:main	72	static
+../Core/Src/main.c:380:6:SystemClock_Config	88	static
+../Core/Src/main.c:469:6:MPU_Config	24	static
+../Core/Src/main.c:500:6:Error_Handler	4	static,ignoring_inline_asm

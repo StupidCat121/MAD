@@ -1,0 +1,31 @@
+01:45:08 **** Incremental Build of configuration Debug for project Lab08_sp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'initializeScreen0':
+../Core/Src/main.c:147:38: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+  147 |         sprintf(H_Buffer, "%4.1f %%RH", h);
+      |                                      ^
+../Core/Src/main.c:147:9: note: 'sprintf' output between 9 and 317 bytes into a destination of size 8
+  147 |         sprintf(H_Buffer, "%4.1f %%RH", h);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:261:62: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+  261 |                                 sprintf(H_Buffer, "%4.1f %%RH", h);
+      |                                                              ^
+../Core/Src/main.c:261:33: note: 'sprintf' output between 9 and 317 bytes into a destination of size 8
+  261 |                                 sprintf(H_Buffer, "%4.1f %%RH", h);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Lab08_sp.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\NITRO\STM32CubeIDE\workspace_1.19.0\Lab08_sp\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab08_sp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab08_sp.elf
+ 
+arm-none-eabi-size  Lab08_sp.elf 
+arm-none-eabi-objdump -h -S Lab08_sp.elf  > "Lab08_sp.list"
+   text	   data	    bss	    dec	    hex	filename
+  47784	    480	   2560	  50824	   c688	Lab08_sp.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab08_sp.list
+ 
+
+01:45:09 Build Finished. 0 errors, 2 warnings. (took 1s.262ms)
+
